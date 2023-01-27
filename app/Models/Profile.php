@@ -9,6 +9,7 @@ class Profile extends Model
 {
     use HasFactory;
 
+    // Relación uno a mucho (Profils -> User)
     public function user(){
         return $this->belongsTo(User::class);
     }
